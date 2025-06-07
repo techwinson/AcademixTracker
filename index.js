@@ -4,9 +4,9 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 
-import adminRoutes from "./routes/adminRoutes.js";
-import studentRoutes from "./routes/studentRoutes.js";
-import facultyRoutes from "./routes/facultyRoutes.js";
+import adminRoutes from "./server/routes/adminRoutes.js";
+import studentRoutes from "./server/routes/studentRoutes.js";
+import facultyRoutes from "./server/routes/facultyRoutes.js";
 const app = express();
 dotenv.config();
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
